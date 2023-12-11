@@ -5,6 +5,53 @@
     font-family: sans-serif;
 }
 
-body {
+html, body {
+    height: 100%;
     background: #3c3c3c;
+}
+
+.slider {
+    height: 100%;
+}
+
+.layer1, .layer2, .layer3 {
+    position: absolute;
+    inset: 0;
+    background: blue;
+}
+
+.layer1.back {
+    background: url('../assets/images/screen-1/back.jpg') center center/cover no-repeat;
+}
+.layer1.middle {
+    background: url('../assets/images/screen-1/middle.png') center center/cover no-repeat;
+}
+.layer1.front {
+    background: url('../assets/images/screen-1/front.png') center center/cover no-repeat;
+}
+
+.layer2.back {
+    background: url('../assets/images/screen-2/back.jpg') center center/cover no-repeat;
+}
+.layer2.front {
+    background: url('../assets/images/screen-2/front.png') center center/cover no-repeat;
+}
+.layer2.geralt {
+    background: url('../assets/images/screen-2/geralt.png') center center/cover no-repeat;
+}
+.layer2.yennefer {
+    background: url('../assets/images/screen-2/yennefer.png') center center/cover no-repeat;
+}
+
+.layer3.back {
+    background: url('../assets/images/screen-3/back.jpg') center center/cover no-repeat;
+}
+.layer3.middle {
+    background: url('../assets/images/screen-3/middle.png') center center/cover no-repeat;
+}
+.layer3.front {
+    background: url('../assets/images/screen-3/front.png') center center/cover no-repeat;
+}
+.layer3.ciri {
+    background: url('../assets/images/screen-3/ciri.png') center center/cover no-repeat;
 }
