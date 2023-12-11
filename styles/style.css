@@ -14,20 +14,6 @@ html, body {
     height: 100%;
 }
 
-.layer {
-    position: absolute;
-    inset: 0;
-    will-change: transform;
-}
-
-.layer::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: 100;
-	box-shadow: inset 0 0 200px rgb(0 0 0 / .3);
-}
-
 .item {
     overflow: hidden;
 }
@@ -40,6 +26,7 @@ html, body {
 .back1 {
     background: url('../assets/images/screen-1/back.jpg');
 }
+
 .middle1 {
     background: url('../assets/images/screen-1/middle.png');
 }
@@ -74,7 +61,26 @@ html, body {
 }
 
 .layer {
+    position: absolute;
+    inset: 0;
+    will-change: transform;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
+
+.layer:active {
+    cursor: grabbing;
+}
+
+.layer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 100;
+	box-shadow: inset 0 0 200px rgb(0 0 0 / .3);
+}
+
+.layer.active {
+    cursor: grabbing;
+  }

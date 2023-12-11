@@ -7,5 +7,9 @@ new Swiper('.swiper', {
     mousewheel: {
         enabled: true,
         sensitivity: 2.4
+    },
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
     }
-}) 
+})
