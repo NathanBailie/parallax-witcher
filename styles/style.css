@@ -14,13 +14,13 @@ html, body {
     height: 100%;
 }
 
-.layer1, .layer2, .layer3 {
+.layer {
     position: absolute;
     inset: 0;
     will-change: transform;
 }
 
-.vignette::before {
+.layer::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -32,43 +32,49 @@ html, body {
     overflow: hidden;
 }
 
-.wrpper {
+.wrapper {
     will-change: transform;
     transform-style: preserve-3d;
 }
 
-.layer1.back {
-    background: url('../assets/images/screen-1/back.jpg') center center/cover no-repeat;
+.back1 {
+    background: url('../assets/images/screen-1/back.jpg');
 }
-.layer1.middle {
-    background: url('../assets/images/screen-1/middle.png') center center/cover no-repeat;
+.middle1 {
+    background: url('../assets/images/screen-1/middle.png');
 }
-.layer1.front {
-    background: url('../assets/images/screen-1/front.png') center center/cover no-repeat;
-}
-
-.layer2.back {
-    background: url('../assets/images/screen-2/back.jpg') center center/cover no-repeat;
-}
-.layer2.front {
-    background: url('../assets/images/screen-2/front.png') center center/cover no-repeat;
-}
-.layer2.geralt {
-    background: url('../assets/images/screen-2/geralt.png') center center/cover no-repeat;
-}
-.layer2.yennefer {
-    background: url('../assets/images/screen-2/yennefer.png') center center/cover no-repeat;
+.front1 {
+    background: url('../assets/images/screen-1/front.png');
 }
 
-.layer3.back {
-    background: url('../assets/images/screen-3/back.jpg') center center/cover no-repeat;
+.back2 {
+    background: url('../assets/images/screen-2/back.jpg');
 }
-.layer3.middle {
-    background: url('../assets/images/screen-3/middle.png') center center/cover no-repeat;
+.front2 {
+    background: url('../assets/images/screen-2/front.png');
 }
-.layer3.front {
-    background: url('../assets/images/screen-3/front.png') center center/cover no-repeat;
+.geralt {
+    background: url('../assets/images/screen-2/geralt.png');
 }
-.layer3.ciri {
-    background: url('../assets/images/screen-3/ciri.png') center center/cover no-repeat;
+.yennefer {
+    background: url('../assets/images/screen-2/yennefer.png');
+}
+
+.back3 {
+    background: url('../assets/images/screen-3/back.jpg');
+}
+.middle3 {
+    background: url('../assets/images/screen-3/middle.png');
+}
+.front3 {
+    background: url('../assets/images/screen-3/front.png');
+}
+.ciri {
+    background: url('../assets/images/screen-3/ciri.png');
+}
+
+.layer {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }

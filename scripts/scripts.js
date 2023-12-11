@@ -3,6 +3,9 @@
 new Swiper('.swiper', {
     speed: 2200,
     parallax: true,
-    mousewheel: true,
-    spaceBetween: 15
+    spaceBetween: 15,
+    mousewheel: {
+        enabled: true,
+        sensitivity: 2.4
+    }
 }) 
