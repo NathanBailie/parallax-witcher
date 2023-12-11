@@ -7,7 +7,7 @@
 
 html, body {
     height: 100%;
-    background: #3c3c3c;
+    background: black;
 }
 
 .slider {
@@ -17,7 +17,10 @@ html, body {
 .layer1, .layer2, .layer3 {
     position: absolute;
     inset: 0;
-    background: blue;
+}
+
+.item {
+    overflow: hidden;
 }
 
 .layer1.back {
