@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+
+	<title>The Witcher Parallax</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon" />
+
+	<!-- build:css css/main.min.css -->
+	<link rel="stylesheet" href="./assets/js-libs/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/main.css" />
+	<!-- endbuild -->
+</head>
+
+<body class="body">
+	<!-- build:body -->
+
+	<div class="swiper slider">
+		<div class="swiper-wrapper wrapper">
+			<div class="swiper-slide item">
+				<div class="layer back1" data-swiper-parallax="40%"></div>
+				<div class="layer middle1" data-swiper-parallax="27%"></div>
+				<canvas class="particles layer" data-swiper-parallax="16%" data-color="#C8BC8E"></canvas>
+				<div class="layer front1" data-swiper-parallax="16%"></div>
+			</div>
+
+			<div class="swiper-slide item">
+				<div class="layer back2" data-swiper-parallax="40%"></div>
+				<div class="layer geralt" data-swiper-parallax="27%"></div>
+				<div class="layer yennefer" data-swiper-parallax="25%"></div>
+				<canvas class="particles layer" data-swiper-parallax="16%" data-color="#A1AFD4"></canvas>
+				<div class="layer front2" data-swiper-parallax="16%"></div>
+			</div>
+
+			<div class="swiper-slide item">
+				<div class="layer back3" data-swiper-parallax="40%"></div>
+				<div class="layer middle3" data-swiper-parallax="35%"></div>
+				<div class="layer ciri" data-swiper-parallax="27%"></div>
+				<canvas class="particles layer" data-swiper-parallax="16%" data-color="#E0C09A"></canvas>
+				<div class="layer front3" data-swiper-parallax="16%"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- endbuild -->
+	<!-- build:js js/common.min.js -->
+	<script src="./assets/js-libs/particles/particles.js"></script>
+	<script src="./assets/js-libs/swiper/swiper-bundle.min.js"></script>
+	<script src="./assets/js-libs/swiper/swiper-bundle.min.js"></script>
+	<script src="js/common.js"></script>
+	<!-- endbuild -->
+</body>
+
+</html>

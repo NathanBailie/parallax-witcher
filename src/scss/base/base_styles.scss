@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+	background: black;
+}
+
+.slider {
+	height: 100%;
+}
+
+.item {
+	overflow: hidden;
+}
+
+.wrapper {
+	will-change: transform;
+	transform-style: preserve-3d;
+}
